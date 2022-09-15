@@ -42,6 +42,7 @@ Rails.application.configure do
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
+  config.web_socket_server_url = 'wss://boiling-chamber-77271.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = ['https://boiling-chamber-77271.herokuapp.com/', 'https://boiling-chamber-77271.herokuapp.com/']
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
@@ -79,8 +80,6 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-
-  config.web_socket_server_url = 'wss://boiling-chamber-77271.herokuapp.com'
 
   if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
