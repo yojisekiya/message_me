@@ -56,13 +56,9 @@ end
 
 group :production do
   gem 'pg'
-  gem "redis"
+  gem 'rails_12factor'
+  gem 'redis'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-
-gem 'net-imap'
-gem 'net-pop'
-gem 'net-smtp'
